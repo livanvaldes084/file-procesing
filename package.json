@@ -1,0 +1,33 @@
+{
+  "name": "tsv-file-processor",
+  "version": "1.0.0",
+  "description": "Tsv file processor",
+  "main": "start.js",
+  "scripts": {
+    "start": "node ./start.js",
+    "dev": "nodemon ./start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livanvaldes084/file-procesing.git"
+  },
+  "author": "Ing.Livan Capote Valdes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/livanvaldes084/file-procesing/issues"
+  },
+  "homepage": "https://github.com/livanvaldes084/file-procesing#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-swagger-generator": "^1.1.17",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "nodemon": "^2.0.4",
+    "winston": "^3.2.1"
+  }
+}

@@ -1,0 +1,5 @@
+Please comment all the end points following the lines commented below
+
+// @route    POST api/account
+// @desc     Creates a new account 
+// @access   Private (jwt token)

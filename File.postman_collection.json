@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "101582c7-9136-44be-b5c5-4fa2f4db9493",
+		"name": "File",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\":\"demo\",\n\t\"password\":\"demo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3052/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3052",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read directory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRlbW8iLCJ0eXAiOiJBY2Nlc3MtVG9rZW4iLCJpYXQiOjE1OTI2NjczNjksImV4cCI6MTU5MjY3MDk2OX0.aLbxHnJ78JVr2ZPSb-reC250OdsNTCml7FWNfZmkx9w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3052/api/files/list?humanreadable=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3052",
+					"path": [
+						"api",
+						"files",
+						"list"
+					],
+					"query": [
+						{
+							"key": "humanreadable",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
