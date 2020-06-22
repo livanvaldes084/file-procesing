@@ -7,4 +7,5 @@ module.exports = (app) => {
   app.post("/api/login", AuthController.login);
   //File
   app.get("/api/files/list", auth, FileController.list);
+  app.get("/api/files/metrics", auth, FileController.metrics);
 };
